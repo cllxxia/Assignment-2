@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="COMP1002 Assignment 2">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="style.css">
+  <title>Scali's Pizza & Co.</title>
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Staatliches&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<!--Logo, restaurant name and sign in/view cart options-->
+<header>
+  <div>
+  <a href="index.html">
+    <img src="./imgs/pizzalogo.webp" alt="Logo">
+  </a>
+  </div>
+  <h1>Scali's Pizza & Co.</h1> <!--Company name-->
+    <nav class="navbar"> <!--Sign in & view cart options-->
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+    </nav>
+  </header>
+  <!--Home,entrees,drinks,deals,rewards options-->
+  <section class="masthead">
+    <a href="home">Home</a>
+    <a href="entrees">Entrees</a>
+    <a href="drinks">Drinks</a>
+    <a href="deals">Deals</a>
+    <a href="rewards">Rewards</a>
+  </section>
+
+  <main>
+    <h2>Order Now!</h2>
+     <!--Pizza options-->
+     <div class="pizza-options">
+      <section>
+      <!--pepperoni-->
+      <figure>
+        <figcaption>Pepperoni</figcaption>
+        <a href="index.html">
+          <img src="./imgs/OIP.jpg" alt="pepperoni">
+        </a>
+        <input type="number" value="1" min="1">
+        <label for="pepperoni">Add to Cart</label><!--Used label for add to cart option-->
+      </figure>
+      </section>
+     
+     <!--cheese-->
+      <section>
+        <figure>
+          <figcaption>Cheese</figcaption>
+        <a href="index.html">
+          <img src="./imgs/cheese.jpg" alt="cheese">
+        </a>
+        <input type="number" value="1" min="1">
+        <label for="cheese">Add to Cart</label>
+        </figure>
+      </section>
+     
+      <!--Hawaiian-->
+      <section>
+        <figure>
+          <figcaption>Hawaiian</figcaption>
+        <a href="index.html">
+          <img src="./imgs/hawaiian.jpg" alt="hawaiian">
+        </a>
+        <input type="number" value="1" min="1">
+        <label for="hawaiian">Add to Cart</label>
+        </figure>
+      </section>
+     
+     <!--meat lovers-->
+      <section>
+        <figure>
+          <figcaption>Meat Lovers</figcaption>
+        <a href="index.html">
+          <img src="./imgs/meat.jpg" alt="meat-lovers">
+        </a>
+        <input type="number" value="1" min="1">
+        <label for="meat">Add to Cart</label>
+        </figure>
+      </section>
+      
+      <!--vegetarian-->
+      <section>
+        <figure>
+          <figcaption>Vegetarian</figcaption>
+        <a href="index.html">
+            <img src="./imgs/veggie.jpg" alt="vegetarian">
+        </a>
+          <input type="number" value="1" min="1">
+          <label for="veggie">Add to Cart</label>
+        </figure>
+        </section>
+      <!--margherita-->
+        <section>
+          <figure>
+            <figcaption>Margherita</figcaption>
+          <a href="index.html">
+            <img src="./imgs/margherita.jpg" alt="margherita">
+          </a>
+            <input type="number" value="1" min="1">
+            <label for="margherita">Add to Cart</label>
+          </figure>
+        </section>
+        <!--mushroom-->
+        <section>
+          <figure>
+            <figcaption>Mushroom</figcaption>
+          <a href="index.html">
+            <img src="./imgs/mushroom.jpg" alt="mushroom">
+          </a>
+          <input type="number" value="1" min="1">
+          <label for="mushroom">Add to Cart</label>
+          </figure>
+        </section>
+      </div>
+      
+      <!--choose pizza size, crust, toppings-->
+      <h3>Create Your Own!</h3>
+      
+      <section class="custom">
+        <a href="index.html">
+          <img src="./imgs/buildyourown.png" alt="custom">
+        </a>
+      </section>
+
+      <!--Custom pizza options-->
+        <div class="flexbox-container">
+          <div class="size">
+        <h4>What size?</h4><!--Size options using radio-->
+        
+        <input type="radio" id="small" name="pizza-size" value="Small">
+        <label for="small">Small</label>
+        <br>
+        <input type="radio" id="medium" name="pizza-size" value="Medium">
+        <label for="medium">Medium</label>
+        <br>
+        <input type="radio" id="large" name="pizza-size" value="Large">
+        <label for="large">Large</label>
+        <br>
+        <input type="radio" id="X-Large" name="pizza-size" value="X-Large">
+        <label for="X-Large">X-Large</label>
+        <br>
+        <input type="radio" id="party-size" name="pizza-size" value="Party-Size">
+        <label for="Party-Size">Party-Size</label>
+          </div>
+          
+      
+
+        
+          <div class="crust">
+        <h4>Crust</h4> <!--crust options using radio-->
+        
+        <input type="radio" id="normal" name="crust" value="Normal">
+        <label for="normal">Normal</label>
+        <br>
+        <input type="radio" id="thin" name="crust" value="Thin">
+        <label for="thin">Thin</label>
+        <br>
+        <input type="radio" id="well-done" name="crust" value="Well-done">
+        <label for="well-done">Well-done</label>
+        <br>
+        <input type="radio" id="stuffed" name="crust" value="Stuffed">
+        <label for="stuffed">Stuffed</label>
+          </div>
+        
+      
+
+        
+      <div class="toppings">
+         <h4>Choose Your Toppings!</h4> <!--toppings options using checkbox-->
+             
+           <input type="checkbox" id="pepperoni" name="pepperoni" value="Pepperoni">
+             <label for="pepperoni">Pepperoni</label>
+        <br>
+           <input type="checkbox" id="ham" name="ham" value="Ham">
+             <label for="ham">Ham</label>
+        <br>
+           <input type="checkbox" id="bacon" name="bacon" value="Bacon">
+             <label for="bacon">Bacon</label>
+        <br>
+           <input type="checkbox" id="sausage" name="sausage" value="Sausage">
+             <label for="sausage">Sausage</label>
+        <br>
+           <input type="checkbox" id="black-olives" name="black-olives" value="Black-Olives">
+             <label for="black-olives">Black Olives</label>
+        <br>
+           <input type="checkbox" id="green-olives" name="green-olives" value="Green-Olives">
+             <label for="green-olives">Green Olives</label>
+        <br>
+          <input type="checkbox" id="mushroom" name="mushroom" value="Mushroom">
+             <label for="mushroom">Mushroom</label>
+        <br>
+           <input type="checkbox" id="pineapple" name="pineapple" value="Pineapple">
+             <label for="pineapple">Pineapple</label>
+        <br>
+           <input type="checkbox" id="onion" name="onion" value="Onion">
+             <label for="onion">Onion</label>
+        <br>
+           <input type="checkbox" id="tomato" name="tomato" value="Tomato">
+             <label for="tomato">Tomato</label>
+        <br>
+           <input type="checkbox" id="green-pepper" name="green-pepper" value="Green-Pepper">
+             <label for="green-pepper">Green-Pepper</label>
+        <br>
+           <input type="checkbox" id="red-pepper" name="red-pepper" value="Red-Pepper">
+             <label for="red-pepper">Red-Pepper</label>
+    </div>
+          
+        
+      
+      <div class="sauce">
+      <h4>Add Dipping Sauce?</h4> <!--dipping sauce options using checkbox-->
+      
+        <input type="checkbox" id="marinara" name="marinara" value="Marinara">
+        <label for="marinara">Marinara</label>
+        <br>
+        <input type="checkbox" id="ranch" name="ranch" value="Ranch">
+        <label for="ranch">Ranch</label>
+        <br>
+        <input type="checkbox" id="garlic" name="garlic" value="Garlic">
+        <label for="garlic">Garlic</label>
+        <br>
+        <input type="checkbox" id="no-thanks" name="no-thanks" value="No-thanks">
+        <label for="no-thanks">No Thanks!</label>
+      </div>
+        <div class="information"> <!--name, number, email-->
+            <h5>Ready to Checkout?</h5>
+                 <form>
+                    <input type="text" name="Name" placeholder="Order Name" required>
+                    <br>
+                    <br>
+                    <input type="tel" name="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone Number (123)-456-7890" required>
+                    <br>
+                    <br>
+                    <input type="email" name="email" placeholder="Email" required>
+                 </form>    
+            </div>
+
+      <h5>Pickup or Delivery?</h5> <!--Pick up or delivery options-->
+        <div class="delivery">
+      <input type="radio" id="delivery" name="option" value="Delivery">
+      <label for="delivery">Delivery</label>
+      <br>
+      <input type="radio" id="pickup" name="option" value="Pickup">
+      <label for="pickup">Pick-Up</label>
+        </div>
+
+      <h6>Delivery? Please Provide Your Address</h6>
+        <div class="address">
+           <input type="text" name="Address" placeholder="123 Pizza St, PizzaTown" required>
+        </div>
+    
+    <footer>
+       <div>
+          <a href="index.html"> <!--Logo Image-->
+            <img src="./imgs/pizzalogo.webp" alt="logo">
+         </a>
+      </div>
+      <div>
+       <h4>Contact Us!</h4>
+         <p>kjlfdflsffldkfsfd</p>
+       <h5>Careers</h5>
+     </div>
+   </footer>
+  </main>
+ </html>
+
